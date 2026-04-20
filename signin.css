@@ -1,0 +1,150 @@
+:root {
+    --primary: #00DAF3;
+    --background: #111317;
+    --surface: #141416;
+    --text: #F4F4F5;
+    --muted: #A1A1AA;
+    --border: #27272A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    /*background: rgba(0,218,243,0.05);*/
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.login-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-label a {
+    color: var(--primary);
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--text);
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 218, 243, 0.2);
+}
+
+button {
+    background: var(--primary);
+    color: var(--background);
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.login-footer {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.login-footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.error {
+    display: block;
+    color: #ff6b6b;
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 24px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(161, 161, 170, 0.25);
+}

@@ -1,0 +1,103 @@
+<?php
+?>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <link rel="stylesheet" href="reg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-glow"></div>
+
+<main class="register-wrapper">
+    <div class="register-card">
+
+        <div class="register-header">
+            <h1>Create Account</h1>
+            <p>Join us today</p>
+        </div>
+
+        <form id="registerForm" method="post" action="reg.php">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="full_name" name="full_name" placeholder="Enter your full name">
+                <small class="error" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address">
+                <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="two-column">
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••">
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="••••••••">
+                    <small class="error" id="confirmError"></small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Account Type</label>
+                <select id="account_type" name="account_type">
+                    <option value="personal">Personal Account</option>
+                    <option value="enterprise">Enterprise Account</option>
+                    <option value="developer">Developer Portal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+    <label>Gender</label>
+    <div class="radio-group">
+        <label><input type="radio" name="gender" value="male"><span>Male</span></label>
+        <label><input type="radio" name="gender" value="female"><span>Female</span></label>
+        <label><input type="radio" name="gender" value="other"><span>Other</span></label>
+        <label><input type="radio" name="gender" value="prefer_not"><span>Prefer not to say</span></label>
+    </div>
+</div>
+
+<div class="checkbox-group">
+    <label for="terms">
+        <input type="checkbox" id="terms" name="terms">
+        <span>
+            I agree to <a href="#">Terms & Conditions</a> and our privacy policy regarding the processing of technical data.
+        </span>
+    </label>
+</div>
+            <small class="error" id="termsError"></small>
+
+        
+            <button type="submit" id="createBtn" disabled>Create Account</button>
+
+            <div class="alt-link">
+                Already have an account? <a href="#">Log In</a>
+            </div>
+        </form>
+
+    </div>
+</main>
+<!--
+<div class="status-bar">
+    <span class="pulse"></span>
+    <span>All systems operational</span>
+</div>
+-->
+<footer>
+    © 2026 All Rights Reserved
+</footer>
+
+<script src="reg.js"></script>
+</body>
+</html>

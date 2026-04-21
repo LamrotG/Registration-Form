@@ -1,13 +1,17 @@
-# Modern Auth UI PHP
+# Login + Signup Authentication Forms
 
-A modern dark-mode authentication interface including:
+A sleek dark-mode authentication system built with PHP, featuring both login and registration pages with a clean modern interface.
 
-- Login form
-- Registration form
-- Client-side validation
-- PHP form processing
-- Space Grotesk typography
-- Minimal SaaS design
+Features
+-Secure login form
+-User registration form
+-Client-side form validation
+-PHP form handling
+-Space Grotesk typography
+-Minimal SaaS-inspired design
+-Responsive layout for different screen sizes
+
+This project focuses on creating a smooth and polished authentication experience while keeping the codebase simple and easy to customize.
 
 ## Screenshots
 

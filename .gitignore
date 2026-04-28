@@ -1,16 +1,42 @@
-# system files
+# =====================
+# SYSTEM FILES
+# =====================
 .DS_Store
 Thumbs.db
 
-# IDE files
+# =====================
+# IDE FILES
+# =====================
 .vscode/
 .idea/
 
-# environment files
+# =====================
+# ENVIRONMENT / SECRETS
+# =====================
 .env
+.env.local
+.env.*.local
 
-# uploaded files
-uploads/
-
-# logs
+# =====================
+# LOGS
+# =====================
 *.log
+
+# =====================
+# UPLOADS (both systems)
+# =====================
+uploads/
+saas-registration/uploads/
+student-registration/uploads/
+
+# =====================
+# CACHE / TEMP
+# =====================
+tmp/
+cache/
+
+# =====================
+# OS / EDITOR TRASH
+# =====================
+*.swp
+*.swo

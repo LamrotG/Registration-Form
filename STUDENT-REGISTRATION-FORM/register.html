@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <form id="registerForm" action="register.php" method="POST">
+    <h2>Student Registration Form</h2>
+
+    <div class="row">
+      <div class="input-group">
+        <label>First Name <span>*</span></label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name">
+        <small class="error" id="fnameError"></small>
+      </div>
+
+      <div class="input-group">
+        <label>Last Name <span>*</span></label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name">
+        <small class="error" id="lnameError"></small>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-group">
+        <label>Email Address <span>*</span></label>
+        <input type="email" id="email" name="email" placeholder="Enter email">
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="input-group">
+        <label>Username <span>*</span></label>
+        <input type="text" id="username" name="username" placeholder="Enter username">
+        <small class="error" id="usernameError"></small>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-group password-group">
+        <label>Password <span>*</span></label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <div class="input-group password-group">
+        <label>Retype Password <span>*</span></label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Retype password">
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>Gender <span>*</span></label>
+      <div class="horizontal-options">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+      <small class="error" id="genderError"></small>
+    </div>
+
+    <div class="row">
+      <div class="input-group">
+        <label>Year <span>*</span></label>
+        <select id="year" name="year">
+          <option value="">Select year</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <small class="error" id="yearError"></small>
+      </div>
+
+      <div class="input-group">
+        <label>Department <span>*</span></label>
+        <select id="department" name="department">
+          <option value="">Select department</option>
+          <option>SE</option>
+          <option>CSE</option>
+          <option>EPCE</option>
+          <option>Architecture</option>
+          <option>Civil Engineering</option>
+          <option>Water Engineering</option>
+          <option>Mechanical Engineering</option>
+          <option>Material Science</option>
+          <option>Industrial Chemistry</option>
+        </select>
+        <small class="error" id="departmentError"></small>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-group hobbies-group">
+        <label>Hobbies</label>
+        <div class="vertical-options">
+          <label><input type="checkbox" name="hobbies[]" value="Reading">Reading</label>
+          <label><input type="checkbox" name="hobbies[]" value="Sports">Sports</label>
+          <label><input type="checkbox" name="hobbies[]" value="Music">Music</label>
+          <label><input type="checkbox" name="hobbies[]" value="Travel">Travel</label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Other</label>
+        <textarea name="other" placeholder="Write additional hobbies..."></textarea>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button type="reset" class="cancel-btn">Cancel Registration</button>
+      <button type="submit" name="register" class="register-btn">Register</button>
+    </div>
+
+    <p class="signin-text">
+      Have an account? <a href="signin.php">Sign in</a>
+    </p>
+  </form>
+</div>
+
+<div id="popup" class="popup">
+  🎉 You have registered successfully. Sign in.
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

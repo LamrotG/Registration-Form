@@ -1,0 +1,154 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:
+    radial-gradient(circle at top left, rgba(37,99,235,0.06), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(59,130,246,0.05), transparent 35%),
+    #f7f9fc;
+  min-height:100vh;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:#535354;
+  color:white;
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+}
+
+.logo{
+  font-weight:bold;
+}
+
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.welcome{
+  font-size:14px;
+  opacity:0.9;
+}
+
+/* PROFILE */
+.profile{
+  position:relative;
+}
+
+.profile-icon{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+/* DROPDOWN */
+.dropdown{
+  position:absolute;
+  right:0;
+  top:45px;
+  background:#535354;
+  width:140px;
+  border-radius:10px;
+  display:none;
+  flex-direction:column;
+  box-shadow:0 8px 24px rgba(0,0,0,0.2);
+}
+
+.dropdown a{
+  padding:12px;
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.dropdown a:hover{
+  background:rgba(255,255,255,0.1);
+}
+
+.logout{
+  color:#ff6b6b;
+}
+
+/* MAIN CARD */
+.container{
+  display:flex;
+  justify-content:center;
+  margin-top:80px;
+}
+
+.card{
+  background:#535354;
+  padding:40px;
+  border-radius:18px;
+  width:420px;
+  text-align:center;
+  color:white;
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+.card h2{
+  margin-bottom:10px;
+}
+
+.card p{
+  opacity:0.8;
+  margin-bottom:25px;
+}
+
+/* ACTION BUTTONS */
+.actions{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.actions button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  background:#2563eb;
+  color:white;
+  transition:0.3s;
+}
+
+.actions button:hover{
+  box-shadow:0 8px 20px rgba(37,99,235,0.3);
+}
+
+.show{
+  display:flex;
+}
+
+
+/* bottom logout container */
+.bottom-logout{
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+}
+
+/* red logout button */
+.logout-btn{
+  padding:12px 25px;
+  background:#ef4444;
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.logout-btn:hover{
+  background:#dc2626;
+}

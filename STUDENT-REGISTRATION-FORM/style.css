@@ -1,0 +1,219 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:
+    radial-gradient(circle at top left, rgba(37,99,235,0.06), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(59,130,246,0.05), transparent 35%),
+    #f7f9fc;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding:60px 20px;
+}
+
+.container{
+  width:100%;
+  max-width:760px;
+}
+
+form{
+  background:#2e2e2e;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.row{
+  display:flex;
+  gap:20px;
+}
+
+.input-group{
+  flex:1;
+  margin-bottom:18px;
+  position:relative;
+}
+
+label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+  color:#333;
+}
+
+label span{
+  color:red;
+}
+
+input, select, textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  outline:none;
+  transition:0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 0 4px rgba(37,99,235,0.10);
+}
+
+.password-group input{
+  padding-right:42px;
+}
+
+.toggle-password{
+  position:absolute;
+  right:14px;
+  top:42px;
+  cursor:pointer;
+  color:#666;
+  font-size:16px;
+}
+
+textarea{
+  height:110px;
+  resize:none;
+}
+
+.horizontal-options{
+  display:flex;
+  gap:25px;
+}
+
+.horizontal-options label,
+.vertical-options label{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-weight:500;
+}
+
+.hobbies-group .vertical-options{
+  padding-top:2px;
+}
+
+.vertical-options label{
+  display:flex;
+  align-items:center;
+  gap:8px;           /* controls checkbox-text spacing */
+  font-weight:500;
+  cursor:pointer;
+  line-height:1;     /* removes vertical misalignment */
+}
+
+.vertical-options input[type="checkbox"]{
+  margin:0;          /* removes default browser spacing */
+  width:16px;
+  height:16px;
+}
+.buttons{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  margin-top:20px;
+}
+
+button{
+  width:170px;
+  padding:12px 0;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+  font-weight:600;
+}
+
+.cancel-btn{
+  background:rgba(220,38,38,0.08);
+  color:#dc2626;
+  border:1px solid rgba(220,38,38,0.35);
+}
+
+.cancel-btn:hover{
+  box-shadow:0 6px 14px rgba(220,38,38,0.12);
+}
+
+.register-btn{
+  background:#2563eb;
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.7);
+  box-shadow:0 0 0 1px rgba(147,197,253,0.45);
+}
+
+.register-btn:hover{
+  box-shadow:0 8px 20px rgba(37,99,235,0.22);
+}
+
+.error{
+  color:red;
+  font-size:13px;
+  margin-top:5px;
+  display:block;
+}
+
+.signin-text{
+  text-align:center;
+  margin-top:25px;
+  font-size:14px;        
+  opacity:0.5;          
+  font-style:italic;
+}
+
+.signin-text a{
+  color:#2563eb;
+  text-decoration:underline;
+  text-decoration:none;
+}
+
+.popup{
+  position:fixed;
+  top:25px;
+  right:25px;
+  background:#16a34a;
+  color:#fff;
+  padding:16px 24px;
+  border-radius:10px;
+  display:none;
+}
+
+
+/* LOGIN PAGE SMALL ADJUSTMENTS */
+
+form h2{
+  margin-bottom:25px;
+}
+
+#loginForm{
+  max-width:500px;
+  margin:auto;
+}
+
+.password-group{
+  position:relative;
+}
+
+.popup{
+  position:fixed;
+  top:25px;
+  right:25px;
+  background:#16a34a;
+  color:#fff;
+  padding:16px 24px;
+  border-radius:10px;
+  display:none;
+  z-index:1000;
+}

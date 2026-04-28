@@ -1,0 +1,105 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:
+    radial-gradient(circle at top left, rgba(37,99,235,0.06), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(59,130,246,0.05), transparent 35%),
+    #f7f9fc;
+  min-height:100vh;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 30px;
+  background:#535354;
+  color:white;
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+}
+
+.logo{
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.nav-links a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-size:14px;
+  opacity:0.9;
+}
+
+.nav-links a:hover{
+  opacity:1;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:80vh;
+}
+
+.card{
+  background:#535354;
+  color:white;
+  padding:45px;
+  border-radius:18px;
+  width:500px;
+  text-align:center;
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+.card h1{
+  margin-bottom:15px;
+}
+
+.card p{
+  opacity:0.8;
+  font-size:15px;
+  margin-bottom:25px;
+  line-height:1.5;
+}
+
+/* BUTTONS */
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.btn{
+  padding:12px 20px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.register{
+  background:#2563eb;
+  color:white;
+}
+
+.register:hover{
+  box-shadow:0 8px 20px rgba(37,99,235,0.3);
+}
+
+.signin{
+  background:rgba(255,255,255,0.1);
+  color:white;
+  border:1px solid rgba(255,255,255,0.3);
+}
+
+.signin:hover{
+  background:rgba(255,255,255,0.2);
+}
